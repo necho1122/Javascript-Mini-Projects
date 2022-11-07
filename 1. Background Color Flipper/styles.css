@@ -1,0 +1,37 @@
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	margin: 50px;
+}
+
+.container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-flow: column;
+	justify-content:center;
+	align-items: center;
+	background-color: #845225;
+	
+}
+
+.button {
+	font-size: 1em;
+	font-weight: 800;
+	color:  #D18D23;
+	margin: 10px;
+	padding: 5px;
+	box-shadow: 1px 3px 3px 1px #000;
+	cursor: pointer;
+
+}
+
+.button:active{
+	box-shadow: none;
+	color:  #cea35d;
+}
+
