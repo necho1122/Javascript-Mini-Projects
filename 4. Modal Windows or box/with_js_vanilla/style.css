@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    min-width: 20%;
+    max-width: 80%;
+}
+.open_dialog{
+    background-color: #3e606f;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 3px 1px #000;
+    margin: 10px;
+}
+
+.open_dialog:active{
+    box-shadow: none;
+    color: rgb(170, 170, 170);
+}
+
+dialog::backdrop {
+    background-color: #3e606f9f;
+}

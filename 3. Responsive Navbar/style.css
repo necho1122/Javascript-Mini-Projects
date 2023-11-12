@@ -1,0 +1,142 @@
+/*-----General-----*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar_container{
+	background-color: coral;
+}
+
+.menu_option{
+	list-style-type: none;
+	margin: 7px;
+}
+
+.user-log{
+	list-style-type: none;
+	margin: 7px;
+}
+
+.user-log{
+	border: solid 1px rgb(110, 56, 56);
+	width: 50px;
+	padding: 5px;
+	align-self: center;
+	box-shadow: 0 3px 3px 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: #8E8888;
+}
+
+a:focus {
+	color: #8E8888;
+}
+
+.user-log:active{
+	box-shadow: none;
+}
+
+.main_content{
+	margin: 1% 3%;
+	text-align: justify;
+}
+h2{
+	text-align: center;
+}
+
+/*-----Mobile First-----*/
+
+.bar_list{
+	display: none;
+}
+
+svg {
+	width: 20px;
+	height: 25px;
+}
+
+.button_2{
+	display: none;
+}
+
+.bar_list_2 {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	background-color: coral;
+	width: 100%;
+}
+
+span {
+	display: inline-flex;
+	padding: 15px 10px;
+}
+
+/*-----Tablets-----*/
+
+@media screen and (min-width:480px) {
+	.navbar_container{
+		display: flex;
+		justify-content: space-between;
+	}
+	.bar_list{
+		display: flex;
+		margin: 0 20px;
+	}
+	.user-log{
+		display: inline-flex;
+		flex-direction: row;
+	}
+	.menu_option{
+		display: none;
+	}
+	.button{
+		display: none;
+	}
+	.button_2{
+		display: block;
+	}
+	.menu_option_2{
+		display: block;
+	}
+	.container_2{
+		display: block;
+	}
+	.bar_list_2{
+		margin: 0;
+	}
+}
+
+/*-----Desktop-----*/
+
+@media screen and (min-width:700px){
+	.navbar_container{
+		display: flex;
+		justify-content:flex-end;
+		align-items: center;
+	}
+	.bar_list{
+		display: flex;
+		align-items: center;
+		margin-right: 5%;
+	}
+	.menu_option, .user-log{
+		display: block;
+		margin: 15px;
+	}
+	.button_2{
+		display: none;
+	}
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal box</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery-3.6.1.js"></script>
+    <script src="jquery-ui.js"></script>
+</head>
+<body>
+    <button id="opener">Open dialog</button>
+    <div id="dialog" title="dialog title">I'm a dialog</div>
+    <script>
+        $("#dialog").dialog({autoOpen: false});
+        $("#opener").click(function(){
+            $("#dialog").dialog("open");
+        });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

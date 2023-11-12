@@ -15,4 +15,9 @@ window.onload = function() {
         counter--;
         document.querySelector('#counter').innerHTML = counter;
     })
+
+    document.querySelector('#btn-reset').addEventListener('click', reset=>{
+        counter = 0;
+        document.querySelector('#counter').innerHTML = counter;
+    })
 }
